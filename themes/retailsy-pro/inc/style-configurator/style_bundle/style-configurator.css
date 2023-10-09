@@ -1,0 +1,503 @@
+#color-scheme {
+    position: fixed;
+    top: 50%;
+    right: -310px;
+    z-index: 10;
+    /* -webkit-box-shadow: -3px 0px 50px -2px rgb(0 0 0 / 14%);
+    -moz-box-shadow: -3px 0px 50px -2px rgba(0, 0, 0, 0.14);
+    box-shadow: -3px 0px 50px -2px rgb(0 0 0 / 14%); */
+    transform: translateY(-50%);
+}
+
+#color-scheme>a {
+    position: absolute;
+    right: 100%;
+    cursor: pointer;
+    display: block;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 11;
+    background-color: #ffffff;
+    -moz-border-radius: 4px 0 0 4px;
+    -webkit-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+    -webkit-box-shadow: 0px 0px 50px 2px rgb(0 0 0 / 14%);
+    -moz-box-shadow: 0px 0px 50px 2px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 0px 50px 2px rgb(0 0 0 / 14%);
+    overflow: hidden;
+}
+
+.togo>i {
+    color: var(--bs-primary);
+}
+
+.toggle-panel,
+.togo>i:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.togo>i:first-child {
+    position: relative;
+}
+
+.togo:first-child>i:last-child {
+    animation: goleft 0.8s linear infinite;
+}
+
+.togo:last-child>i:last-child {
+    animation: goright 0.8s linear infinite;
+}
+
+@keyframes goleft {
+    0% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 50%;
+    }
+    100% {
+        top: 50%;
+        transform: translate(-50px, -50%) scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes goright {
+    0% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 50%;
+    }
+    100% {
+        top: 50%;
+        transform: translate(50px, -50%) scale(2);
+        opacity: 0;
+    }
+}
+
+#theme-changer {
+    width: 310px;
+    box-shadow: 0px 0px 50px 2px rgb(0 0 0 / 14%);
+    background: #ffffff;
+    padding: 15px 30px;
+    overflow: hidden;
+    border-radius: 4px 0 0 4px;
+}
+
+#theme-changer h4 {
+    letter-spacing: .5px;
+    padding: 0;
+    border: 0px;
+    margin: 10px auto !important;
+    white-space: nowrap;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#theme-changer h2 {
+    margin-bottom: 18px;
+    font-size: 1.5rem;
+}
+
+/* #theme-changer h4:before {
+    right: 11.5%;
+}
+
+#theme-changer h4:after {
+    left: 11.5%;
+} */
+
+#theme-changer h4:after {
+    border-bottom: 1px solid #C4C4C4;
+    content: '';
+    /* display: table-cell; */
+    position: absolute;
+    top: -8px;
+    left: -50px;
+    width: 200%;
+}
+
+.style-palette,
+.style-palette-bg,
+.style-palette-bx {
+    list-style: none outside none;
+    margin: 0 0 20px;
+    padding: 0 15px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.style-palette li,
+.style-palette-bg li {
+    margin: 2px 2px 0 0;
+}
+
+.style-palette li a,
+.style-palette-bg li a,
+.style-palette-bx li a {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 2px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.style-palette li a,
+.style-palette-bg li a {
+    border-radius: 50%;
+}
+
+.style-palette .color-changer [class*="color"],
+.style-palette-bg .pattern-changer [class*="pattern"] {
+    display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+}
+
+.jscolors-bg input.jscolor {
+    border-radius: 4px;
+    border: 1px solid #e8e8e8;
+    font-size: 10px;
+    display: inline-flex;
+    min-height: auto;
+    padding: 0.35rem 1.25rem;
+    vertical-align: baseline;
+}
+
+.color-default {
+    background-color: #F77C29;
+}
+
+.color-one {
+    background-color: #4D7DF0;
+}
+
+.color-two {
+    background-color: #F93C41;
+}
+
+.color-three {
+    background-color: #05BB2B;
+}
+
+.color-four {
+    background-color: #F03E54;
+}
+
+.color-five {
+    background-color: #02CFAA;
+}
+
+.color-six {
+    background-color: #9A62F3;
+}
+
+/* 5215 */
+
+/* .color-eight {
+    background-color: #008080;
+}
+
+.color-nine {
+    background-color: #ee591f;
+}
+
+.color-ten {
+    background-color: #ffba00;
+}
+
+.color-eleven {
+    background-color: #000000;
+}
+
+.color-twelve {
+    background-color: #0088CC;
+}
+
+.color-thirteen {
+    background-color: #019875;
+}
+
+.color-fourteen {
+    background-color: #f24259;
+}
+
+.color-fourteen {
+    background-color: #f24259;
+}
+
+.color-fifteen {
+    background-color: #A03717;
+}
+
+.color-sixteen {
+    background-color: #6CAF17;
+}
+
+.color-seventeen {
+    background-color: #02CFAA;
+} */
+
+.jscolors-bg {
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.style-palette li a.clicked,
+.style-palette-bg li a.clicked,
+.web-btn.clicked,
+.style-palette li a:hover,
+.style-palette-bg li a:hover,
+.web-btn:hover {
+    border: 1px solid #d7d7d7;
+}
+
+.jscolors-bg .jscolor,
+.jscolors-bg #resetColor {
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid transparent;
+    line-height: 2;
+    padding: 0px 20px;
+    border-radius: 0;
+    display: inline-block;
+    width: 100%;
+    max-width: 110px;
+}
+
+.jscolors-bg .jscolor {
+    background-color: #ffffff !important;
+    color: #333 !important;
+    border-color: #333;
+    /* font-size:10px; */
+}
+
+.jscolors-bg .jscolor,
+.jscolors-bg #resetColor {
+    max-width: 105px;
+}
+
+.jscolors-bg #resetColor {
+    color: #ffffff !important;
+    /* background: -webkit-linear-gradient(300deg, var(--color-primary) 0%, var(--color-hover) 100%) !important;
+    background: linear-gradient(150deg, var(--color-primary) 0%, var(--color-hover) 100%) !important; */
+    cursor: pointer;
+    background-color: #F77C29;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 1px solid #F77C29;
+}
+
+.style-palette:last-child,
+.style-palette-bg:last-child {
+    border-bottom: 0 none;
+    margin-right: 0;
+}
+
+.pattern-changer .pattern-1 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-1.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-2 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-2.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-3 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-3.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-4 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-4.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-5 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-5.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-6 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-6.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-7 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-7.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-8 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-8.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-9 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-9.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-10 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-10.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-11 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-11.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-12 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-12.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-13 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-13.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-14 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-14.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-15 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-15.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-16 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-16.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-17 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-17.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-18 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-18.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-19 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-19.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-20 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-20.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-21 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-21.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-22 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-22.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-23 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-23.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-24 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-24.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-25 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-25.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-26 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-26.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-27 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-27.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-28 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-28.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-29 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-29.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-30 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-30.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-31 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-31.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-32 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-32.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-33 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-33.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-34 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-34.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-35 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-35.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-36 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-36.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-37 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-37.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-38 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-38.png");
+    background-size: 100% 100%;
+}
+
+.pattern-changer .pattern-39 {
+    background-image: url("../../../assets/images/bg-pattern/pattern-39.png");
+    background-size: 100% 100%;
+}

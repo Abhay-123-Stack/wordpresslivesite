@@ -1,0 +1,26 @@
+.retailsy_woosl_table {
+    margin-bottom: 60px;
+}
+
+.retailsy_woosl_table.close tbody {
+    display: none;
+}
+
+.retailsy_woosl_table tr td.woosl-thumbnail {
+    width: 100px;
+}
+
+.retailsy_woosl_table tr td.woosl-add {
+    text-align: right;
+}
+
+.woosl-btn .woosl-button {
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.woosl-heading {
+    cursor: pointer;
+}

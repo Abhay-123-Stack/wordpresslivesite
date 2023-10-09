@@ -1,0 +1,114 @@
+/* style 01 */
+
+.retailsy_ct-countdown.retailsy_ct-style-01 .retailsy_ct-timer {
+    font-weight: 700;
+    color: rgba(var(--color-hover), 1);
+}
+
+/* style 02 */
+
+.retailsy_ct-countdown.retailsy_ct-style-02 .retailsy_ct-timer {
+    display: flex;
+    align-items: center;
+    max-width: 360px;
+}
+
+.retailsy_ct-countdown.retailsy_ct-style-02 .retailsy_ct-timer>span {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    border: 1px solid rgba(var(--color-hover), 1);
+    padding: 10px 6px;
+    margin: 0 2px;
+    line-height: 1;
+    text-align: center;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .retailsy_ct-countdown.retailsy_ct-style-02 .retailsy_ct-timer>span {
+        padding: 5px 3px;
+    }
+}
+
+.retailsy_ct-countdown.retailsy_ct-style-02 .retailsy_ct-timer>span span:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(var(--color-hover), 1);
+    margin-bottom: 5px;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+.retailsy_ct-countdown.retailsy_ct-style-02 .retailsy_ct-timer>span span:last-child {
+    font-size: 10px;
+    text-transform: uppercase;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+/* style 03 */
+
+.retailsy_ct-countdown.retailsy_ct-style-03 .retailsy_ct-timer {
+    display: flex;
+    align-items: center;
+    max-width: 360px;
+    font-size: 16px;
+}
+
+.retailsy_ct-countdown.retailsy_ct-style-03 .retailsy_ct-timer>span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(var(--color-hover), 1);
+    padding: 5px;
+    margin: 0 2px;
+    line-height: 1;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 10px;
+}
+
+.woocommerce ul.products .retailsy_ct-countdown.retailsy_ct-style-03 .retailsy_ct-timer>span {
+    width: 50px;
+    height: 50px;
+    font-size: 10px;
+}
+
+.retailsy_ct-countdown.retailsy_ct-style-03 .retailsy_ct-timer>span span:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(var(--color-hover), 1);
+    margin-bottom: 5px;
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+.retailsy_ct-countdown.retailsy_ct-style-03 .retailsy_ct-timer>span span:last-child {
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+/* style flipper */
+
+.retailsy_ct-flipper .flipper-dark label,
+.retailsy_ct-flipper .flipper label {
+    color: #222;
+}
+
+a.btn.btn-primary.need-help {
+    padding: 0.509em 0.75em;
+    margin-left: 10px;
+}
+
+.retailsy_ct-countdown {
+    margin: 10px 0px;
+}
+
+.retailsy_ct-countdown span>span {
+    font-size: 13px;
+    font-weight: 700;
+}

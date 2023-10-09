@@ -1,0 +1,38 @@
+a.retailsy_pv-popup {
+    bottom: 10px;
+    font-size: 25px;
+    line-height: 0;
+    opacity: 1;
+    outline: medium none !important;
+    padding: 15px 0;
+    position: absolute;
+    right: 13px;
+    text-decoration: none;
+    z-index: 10;
+    color: #444;
+    display: none;
+}
+
+.video-thumbnail {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.video-thumbnail .video_icon_img {
+    background-position: -41px -14px !important;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    z-index: 1;
+    background-size: cover !important;
+}
+
+#video-thumbnail:hover:before {
+    color: #eee;
+}
